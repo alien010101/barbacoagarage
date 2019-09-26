@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <!--
+    <record model="ir.ui.view" id="extension_reporte__pos_gastos.list">
+      <field name="name">Extension_reporte_POS_gastos list</field>
+      <field name="model">extension_reporte__pos_gastos.extension_reporte__pos_gastos</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+    -->
+
+    <!-- actions opening views on models -->
+    <!--
+    <record model="ir.actions.act_window" id="extension_reporte__pos_gastos.action_window">
+      <field name="name">Extension_reporte_POS_gastos window</field>
+      <field name="res_model">extension_reporte__pos_gastos.extension_reporte__pos_gastos</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    -->
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="extension_reporte__pos_gastos.action_server">
+      <field name="name">Extension_reporte_POS_gastos server</field>
+      <field name="model_id" ref="model_extension_reporte__pos_gastos_extension_reporte__pos_gastos"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    <!--
+    <menuitem name="Extension_reporte_POS_gastos" id="extension_reporte__pos_gastos.menu_root"/>
+    -->
+    <!-- menu categories -->
+    <!--
+    <menuitem name="Menu 1" id="extension_reporte__pos_gastos.menu_1" parent="extension_reporte__pos_gastos.menu_root"/>
+    <menuitem name="Menu 2" id="extension_reporte__pos_gastos.menu_2" parent="extension_reporte__pos_gastos.menu_root"/>
+    -->
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="extension_reporte__pos_gastos.menu_1_list" parent="extension_reporte__pos_gastos.menu_1"
+              action="extension_reporte__pos_gastos.action_window"/>
+    <menuitem name="Server to list" id="extension_reporte__pos_gastos" parent="extension_reporte__pos_gastos.menu_2"
+              action="extension_reporte__pos_gastos.action_server"/>
+    -->
+  </data>
+</odoo>
